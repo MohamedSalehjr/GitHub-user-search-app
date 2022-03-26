@@ -113,7 +113,7 @@ span{
     margin-left: 0;
 }
 .link-wrapper{
-    flex-basis: 162px;
+    flex-basis: 260px;
 }
 .octo{
     display: flex;
@@ -136,6 +136,9 @@ span{
     margin-bottom: 0;
 
 }
+.links{
+    margin-top: 20px;
+}
 
 .bio {
     display: flex;
@@ -146,7 +149,9 @@ span{
     .main-section {
          flex-direction: column;
     }
-
+    .link-wrapper{
+        flex-basis: 160px;
+    }
     // .search-icon{
     //     width:20px;
     //     height:20px;
@@ -157,7 +162,27 @@ span{
 }
 
 @media only screen and (max-width: 400px) {
+   
     .main{
         height: auto;
     }
+}
+@media only screen and (max-width: 462px) {
+    p{
+        font-size: 12px;
+    }
+    span{
+        font-size: 13px;
+    }
+   .extra{
+    display: flex;
+    flex-direction: column;
+   }
+   .space{
+       margin-top: 20px;
+   }
+   .links{
+    margin-top: 0;
+}
+
 }

@@ -27,10 +27,10 @@
             <path
               d="M10.609 0c5.85 0 10.608 4.746 10.608 10.58 0 2.609-.952 5-2.527 6.847l5.112 5.087a.87.87 0 01-1.227 1.233l-5.118-5.093a10.58 10.58 0 01-6.848 2.505C4.759 21.16 0 16.413 0 10.58 0 4.747 4.76 0 10.609 0zm0 1.74c-4.891 0-8.87 3.965-8.87 8.84 0 4.874 3.979 8.84 8.87 8.84a8.855 8.855 0 006.213-2.537l.04-.047a.881.881 0 01.058-.053 8.786 8.786 0 002.558-6.203c0-4.875-3.979-8.84-8.87-8.84z"
               fill="#0079ff" /></svg>
-          <input type="text" class="form-control" placeholder="Search Github username" aria-label="Username"
+          <input type="text" id="input" class="form-control" placeholder="Search Github username" aria-label="Username"
             aria-describedby="basic-addon1">
           <!-- <button type="button" class="btn btn-primary">Search</button> -->
-          <button type="button" class="btn btn-primary btn-sm">Search</button>
+          <button type="button" id="btn" class="btn btn-primary btn-sm">Search</button>
         </div>
       </div>
 
@@ -44,11 +44,11 @@
           </div>
 
           <div class="content-wrapper">
-            <div class="octo"><h5 class="card-title row">The Octocat</h5><p>Joined 25 Jan 2011</p></div>
+            <div class="octo"><h5 class="card-title row">The Octocat</h5><p id="joined">Joined 25 Jan 2011</p></div>
             
             <!-- <p>Joined 25 Jan 2011</p> -->
-            <p> <a>@octocat</a></p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+            <p> <a id="user">@octocat</a></p>
+            <p id="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
             <div class="row">
               <div class="card stats">
                 <div class="row">
@@ -64,25 +64,25 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <h5>4</h5>
+                    <h5 id="repos" >4</h5>
                   </div>
                   <div class="col">
-                    <h5>4</h5>
+                    <h5 id="followers">4</h5>
                   </div>
                   <div class="col">
-                    <h5>4</h5>
+                    <h5 id="following">4</h5>
                   </div>
                 </div>
               </div>
               <div class="container">
-                <div class="row ">
-                  <div class="col-6 "><img src="assets/icon-location.svg"/> <span class="">San francisco</span></div>
-                  <div class="col-6 "><img src="assets/icon-twitter.svg"/><span class="">Not Available</span></div>
+                <div class="row extra">
+                  <div class="col"><img src="assets/icon-location.svg"/> <span class="location">San francisco</span></div>
+                  <div class="col space"><img src="assets/icon-twitter.svg"/><span class="twitter">Not Available</span></div>
                 </div>
 
-                <div class="row">
-                  <div class="col-6 "><img src="assets/icon-website.svg"/><span class="">https://github.blog</span></div>
-                  <div class="col-6 "><img src="assets/icon-company.svg"/><span class="">@github</span></div>
+                <div class="row extra links">
+                  <div class="col space"><img src="assets/icon-website.svg"/><span class="blog">https://github.blog</span></div>
+                  <div class="col space"><img src="assets/icon-company.svg"/><span class="github_username">@github</span></div>
                 </div>
               </div>
             </div>
@@ -95,6 +95,11 @@
     </div>
 
   </main>
+  <script type="module">
+    import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+    </script>
+  <script src="//code.jquery.com/jquery-latest.min.js"></script>
+  <script src="app.js" async defer></script>
 
 </body>
 
