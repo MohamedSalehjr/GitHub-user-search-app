@@ -16,41 +16,53 @@
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
 
-<body>
-  <main>
+<body class="dark-color">
+  <main class="dark-primary">
     <div class="content">
-      <h1>devfinder</h1>
-      <div class="search card">
-        <div class="card-body search-body">
-          <!-- <img class="search-icon" src="assets/icon-search.svg" alt="search-icon" /> -->
-          <svg class="search-icon" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
+      <div class="top">
+        <h1 class="light-text-color">devfinder</h1>
+
+        <div class="switch">
+          <p class="toggle-text">LIGHT</p>
+          <!-- <a class="toggle" >
+          <img src = "assets/icon-moon.svg" height="20" width="20" alt="Moon SVG"/> </a> -->
+          <input type="image" class="toggle sun" src="assets/icon-sun.svg" height="20" width="20">
+          <input type="image" class="toggle moon" src="assets/icon-moon.svg" height="20" width="20">
+        </div>
+      </div>
+
+      <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+      <div class="search card dark-secondary">
+        <div class="card-body search-body"> 
+          <svg class="search-icon" height="24" width="25" style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10.609 0c5.85 0 10.608 4.746 10.608 10.58 0 2.609-.952 5-2.527 6.847l5.112 5.087a.87.87 0 01-1.227 1.233l-5.118-5.093a10.58 10.58 0 01-6.848 2.505C4.759 21.16 0 16.413 0 10.58 0 4.747 4.76 0 10.609 0zm0 1.74c-4.891 0-8.87 3.965-8.87 8.84 0 4.874 3.979 8.84 8.87 8.84a8.855 8.855 0 006.213-2.537l.04-.047a.881.881 0 01.058-.053 8.786 8.786 0 002.558-6.203c0-4.875-3.979-8.84-8.87-8.84z"
               fill="#0079ff" /></svg>
-          <input type="text" id="input" class="form-control" placeholder="Search Github username" aria-label="Username"
-            aria-describedby="basic-addon1">
-          <!-- <button type="button" class="btn btn-primary">Search</button> -->
+          <input type="text" id="input" class="form-control dark-secondary" placeholder="Search Github username"
+            aria-label="Username" aria-describedby="basic-addon1">
+            <p class="wrong">No results</p>
           <button type="button" id="btn" class="btn btn-primary btn-sm">Search</button>
         </div>
       </div>
 
-      <div class="card " >
-        <div class="card-body main-section">
+      <div class="card dark-secondary">
+        <div class="card-body main-section dark-secondary">
           <div class="link-wrapper">
             <img src="assets/icon-github.svg" alt="github-icon" style="width:117px; height: 117px;" />
-            <!-- <h5 class="card-title row">The Octocat</h5>
-            <p>Joined 25 Jan 2011</p>
-            <p> <a>@octocat</a></p> -->
           </div>
 
           <div class="content-wrapper">
-            <div class="octo"><h5 class="card-title row">The Octocat</h5><p id="joined">Joined 25 Jan 2011</p></div>
-            
+            <div class="octo">
+              <h5 class="card-title row">The Octocat</h5>
+              <p id="joined">Joined 25 Jan 2011</p>
+            </div>
+
             <!-- <p>Joined 25 Jan 2011</p> -->
             <p> <a id="user">@octocat</a></p>
-            <p id="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+            <p id="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+              eros.</p>
             <div class="row">
-              <div class="card stats">
+              <div class="card stats dark-primary">
                 <div class="row">
                   <div class="col">
                     <p>Repos</p>
@@ -64,7 +76,7 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <h5 id="repos" >4</h5>
+                    <h5 id="repos">4</h5>
                   </div>
                   <div class="col">
                     <h5 id="followers">4</h5>
@@ -76,13 +88,17 @@
               </div>
               <div class="container">
                 <div class="row extra">
-                  <div class="col"><img src="assets/icon-location.svg"/> <span class="location">San francisco</span></div>
-                  <div class="col space"><img src="assets/icon-twitter.svg"/><span class="twitter">Not Available</span></div>
+                  <div class="col"><img src="assets/icon-location.svg" /> <span class="location">San francisco</span>
+                  </div>
+                  <div class="col space"><img src="assets/icon-twitter.svg" /><span class="twitter">Not Available</span>
+                  </div>
                 </div>
 
                 <div class="row extra links">
-                  <div class="col space"><img src="assets/icon-website.svg"/><span class="blog">https://github.blog</span></div>
-                  <div class="col space"><img src="assets/icon-company.svg"/><span class="github_username">@github</span></div>
+                  <div class="col space"><img src="assets/icon-website.svg" /><span
+                      class="blog">https://github.blog</span></div>
+                  <div class="col space"><img src="assets/icon-company.svg" /><span
+                      class="github_username">@github</span></div>
                 </div>
               </div>
             </div>
