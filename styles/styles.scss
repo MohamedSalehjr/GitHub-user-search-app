@@ -84,11 +84,16 @@ span{
 
 .toggle-text{
     font-size: 13px;
+  
 }
 .toggle{
     cursor: pointer;
     margin-left: 10px;
+
 }
+// .toggle-text::hover{
+//     color: black;
+// }
 .moon{
     display: none;
 }
@@ -208,6 +213,13 @@ span{
 .bio {
     display: flex;
     flex-direction: row;
+}
+.blog{
+    margin-left: 0;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 @media only screen and (max-width: 768px) {

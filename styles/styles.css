@@ -256,6 +256,15 @@ span {
           flex-direction: row;
 }
 
+.blog {
+  margin-left: 0;
+}
+
+.blog:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
   .main-section {
     -webkit-box-orient: vertical;
